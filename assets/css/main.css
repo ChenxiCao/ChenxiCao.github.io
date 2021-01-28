@@ -103,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: transparent;
 		overflow-x: hidden;
 	}
 
@@ -157,12 +157,12 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #ffffff;
+		background-color: #000000;
 		color: #000000;
 	}
 
 	body, input, select, textarea {
-		color: #000000;
+		/* color: #000000; */
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
@@ -187,7 +187,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 600;
-		color: #000000;
+		color: #ffffff;
 	}
 
 	em, i {
@@ -1094,6 +1094,8 @@ input, select, textarea {
 						}
 
 		}
+
+
 
 		@media screen and (max-width: 1152px) {
 
@@ -3372,6 +3374,7 @@ input, select, textarea {
 					}
 
 				#wrapper > section.intro > .content {
+
 					height: 100vh;
 					max-width: none;
 				}
@@ -3563,7 +3566,9 @@ input, select, textarea {
 			#wrapper {
 				padding: 0;
 			}
-
+			.content {
+				background-color: transparent;
+			}
 				#wrapper:before {
 					display: none;
 				}
@@ -3782,6 +3787,7 @@ input, select, textarea {
 				}
 
 					#wrapper > section > .content > section {
+
 						margin: 2.25rem 0;
 					}
 
@@ -3800,13 +3806,15 @@ input, select, textarea {
 		}
 
 	body.is-mobile #wrapper:before {
-    background-color: #ffffff;
+    background-color:transparent;
 		background-attachment: scroll;
 		background-position: 50% -3%;
 		background-repeat: repeat-y;
 		background-size: 150% auto;
 	}
-
+  .content.is-mobile {
+		background-color: transparent;
+	}
 	body.is-mobile #wrapper > section > header {
 		background-attachment: scroll;
 		background-position: 25% 50%;
@@ -3880,6 +3888,7 @@ input, select, textarea {
 		}
 
 		body.is-ie #wrapper section > .content {
+
 			width: 50%;
 		}
 
